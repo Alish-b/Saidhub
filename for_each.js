@@ -58,28 +58,22 @@ function addListItem(labelText, container) {
 
 var selectAll = document.getElementById('selectAll');
 
-var allSelected = false;
-selectAll.onclick = function () {
-	var allCheckboxes = document.getElementsByTagName('INPUT');
-	for(i=0; i<allCheckboxes.length;i++){
-		allCheckboxes[i].checked = selectAll.checked;		
-	}	
-// 	// allSelected =! allSelected;
-// 	if(allSelected == true){
-// 		allSelected = false;
-// 	}
-// 	else{
-// 		allSelected = true;
-// 	}
-// 	var allCheckboxes = document.getElementsByClassName('checkbox');
+	allSelected =! allSelected;
+	if(allSelected == true){
+		allSelected = false;
+	}
+	else{
+		allSelected = true;
+	}
+	var allCheckboxes = document.getElementsByClassName('checkbox');
 
-	// for (i = 0; i < allCheckboxes.length; i++) { 
-	// 	console.log(allCheckboxes[i]);
+	for (i = 0; i < allCheckboxes.length; i++) { 
+		console.log(allCheckboxes[i]);
 
-	// 	allCheckboxes[i].checked = allSelected;
-// 		function check() {
-//     document.getElementById("myCheck").checked = true;
-// }
+		allCheckboxes[i].checked = allSelected;
+		function check() {
+    document.getElementById("myCheck").checked = true;
+}
 
 // // function uncheck() {
 // //     document.getElementById("myCheck").checked = false;
